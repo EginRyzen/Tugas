@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+span{
+    border-radius: 50%;
+    width: 40px;
+    position: relative;
+    top: 50vh;
+    margin:o 10px;
+    height: 40px;
+}
+.s1{
+    background-color: rgb(158, 187, 177);
+    animation: bouncing 1s infinite;
+}
+.s2{
+    background-color: rgb(71, 202, 156);
+    animation: bouncing 1s .10s infinite;
+}
+.s3{
+    background-color: rgb(7, 43, 30);
+    animation: bouncing 1s .10s infinite;
+}
+@keyframes bouncing{
+    0%{
+        top: 50vh;
+    }
+    50%{
+        top:40vh
+    }
+    100%{
+        top:50vh;
+    }
+}
